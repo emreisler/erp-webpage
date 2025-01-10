@@ -1,9 +1,10 @@
 name: Deploy React App with Docker
 
 on:
-  push:
-    branches:
-      - main # Adjust to your deployment branch
+#  push:
+#    branches:
+#      - main # Adjust to your deployment branch
+  workflow_dispatch: # Enable manual triggering
 
 jobs:
   build-and-deploy:
