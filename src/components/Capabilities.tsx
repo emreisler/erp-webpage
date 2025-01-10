@@ -7,6 +7,7 @@ import tcCreation from "../assets/erp-photos/tc-creation.png"
 import operationList from "../assets/erp-photos/operation-list.png"
 import operatorScreen from "../assets/erp-photos/operator-screen.png"
 import createPo from "../assets/erp-photos/create-production-order.png"
+import dashBoard1 from "../assets/erp-photos/dahsboard-1.png"
 
 const { Title, Paragraph } = Typography;
 
@@ -45,7 +46,7 @@ const capabilities: Picture[] = [
     {
         title: 'Dashboard Overview',
         description: 'Get a clear view of your business operations with our intuitive dashboard.',
-        imageUrl: 'https://via.placeholder.com/600x400', // Replace with your image URL
+        imageUrl: dashBoard1, // Replace with your image URL
     },
     {
         title: 'Inventory Management',
