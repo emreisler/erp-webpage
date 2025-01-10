@@ -16,7 +16,7 @@ interface Picture {
     imageUrl: string;
 }
 
-const pictures: Picture[] = [
+const capabilities: Picture[] = [
     {
         title: 'Detail Part Planning',
         description: 'Get a clear view of your business operations with our intuitive dashboard.',
@@ -59,7 +59,7 @@ const pictures: Picture[] = [
     },
 ];
 
-const Pictures: React.FC = () => {
+const Capabilities: React.FC = () => {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [currentImage, setCurrentImage] = useState<string | null>(null);
 
@@ -77,7 +77,7 @@ const Pictures: React.FC = () => {
         <section id="pictures" style={{ padding: '2rem', backgroundColor: '#f7f9fc' }}>
             <Title level={2} style={{ textAlign: 'center', marginBottom: '2rem' }}>Pictures</Title>
             <Row gutter={[16, 16]} justify="center">
-                {pictures.map((picture, index) => (
+                {capabilities.map((picture, index) => (
                     <Col key={index} xs={24} sm={12} md={8}>
                         <Card
                             hoverable
@@ -120,4 +120,4 @@ const Pictures: React.FC = () => {
     );
 };
 
-export default Pictures;
+export default Capabilities;
