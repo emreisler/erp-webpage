@@ -10,15 +10,23 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
+
     steps:
-      # Step 5: SSH into the server and deploy
-      - name: Deploy on Server
-        uses: appleboy/ssh-action@v0.1.0
+
+      - name: Debug
         run: |
           echo "Checking SSH configuration..."
           echo "Hostname: ${{ secrets.SSH_HOST }}"
           echo "SSH Username: ${{ secrets.SSH_USER }}"
-#          echo "SSH Key: ${{ secrets.SSH_KEY }}" | wc -c
+          echo "SSH Key: ${{ secrets.SSH_KEY }}" | wc -c
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+
+      # Step 5: SSH into the server and deploy
+      - name: Deploy on Server
+        uses: appleboy/ssh-action@v0.1.0
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
