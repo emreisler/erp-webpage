@@ -18,7 +18,8 @@ jobs:
           echo "Checking SSH configuration..."
           echo "Hostname: ${{ secrets.SERVER_HOST }}"
           echo "SSH Username: ${{ secrets.SERVER_USERNAME }}"
-          echo "SSH Username Len: ${{ secrets.SERVER_USERNAME }}" | wc -c
+          echo "SERVER_USERNAME Len: ${{ secrets.SERVER_USERNAME }}" | wc -c
+          echo "SERVER_HOST Len: ${{ secrets.SERVER_HOST }}" | wc -c
         env:
           SSH_HOST: ${{ secrets.SERVER_HOST }}
           SSH_USER: ${{ secrets.SERVER_USERNAME }}
