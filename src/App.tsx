@@ -3,8 +3,7 @@ import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import Capabilities from './components/Capabilities';
 import Pricing from './components/Pricing';
-import DemoVideo from './components/DemoVideo';
-import Footer from './components/Footer';
+import Contact from './components/Contact';
 import "./App.css"
 
 const App: React.FC = () => {
@@ -14,8 +13,7 @@ const App: React.FC = () => {
             <HeroSection />
             <Capabilities />
             <Pricing />
-            <DemoVideo />
-            <Footer />
+            <Contact />
         </div>
     );
 };

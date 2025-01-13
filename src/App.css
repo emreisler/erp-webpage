@@ -171,7 +171,7 @@ section p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+/* Contact */
 footer {
   background-color: #2c3e50;
   color: #ecf0f1;
@@ -187,4 +187,8 @@ footer p {
 footer p a {
   color: #1abc9c;
   font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
 }

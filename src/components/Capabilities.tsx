@@ -48,16 +48,6 @@ const capabilities: Picture[] = [
         description: 'Get a clear view of your business operations with our intuitive dashboard.',
         imageUrl: dashBoard1, // Replace with your image URL
     },
-    {
-        title: 'Inventory Management',
-        description: 'Easily track and manage your inventory in real-time.',
-        imageUrl: 'https://via.placeholder.com/600x400', // Replace with your image URL
-    },
-    {
-        title: 'Report Generation',
-        description: 'Generate detailed reports to make informed business decisions.',
-        imageUrl: 'https://via.placeholder.com/600x400', // Replace with your image URL
-    },
 ];
 
 const Capabilities: React.FC = () => {
