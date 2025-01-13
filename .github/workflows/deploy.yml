@@ -42,7 +42,7 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           password: ${{ secrets.SERVER_PASSWORD }}
           script: |
-            docker pull your-dockerhub-username/react-app:latest
-            docker stop react-app || true
-            docker rm react-app || true
-            docker run -d --name react-app -p 80:80 your-dockerhub-username/react-app:latest
+            docker pull ${{ secrets.DOCKER_USERNAME }}/erp-web:latest
+            docker stop erp-web || true
+            docker rm erp-web || true
+            docker run -d --name erp-web -p 80:80 ${{ secrets.DOCKER_USERNAME }}/erp-web:latest
