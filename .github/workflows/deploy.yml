@@ -32,7 +32,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/react-app:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/erp-web:latest
 
       # Step 5: SSH into the server and deploy
       - name: Deploy on Server
