@@ -16,13 +16,12 @@ jobs:
       - name: Debug
         run: |
           echo "Checking SSH configuration..."
-          echo "Hostname: ${{ secrets.SSH_HOST }}"
-          echo "SSH Username: ${{ secrets.SSH_USER }}"
-          echo "SSH Key: ${{ secrets.SSH_KEY }}" | wc -c
+          echo "Hostname: ${{ secrets.SERVER_HOST }}"
+          echo "SSH Username: ${{ secrets.SERVER_USERNAME }}"
+#          echo "SSH Key: ${{ secrets.SSH_KEY }}" | wc -c
         env:
-          SSH_HOST: ${{ secrets.SSH_HOST }}
-          SSH_USER: ${{ secrets.SSH_USER }}
-          SSH_KEY: ${{ secrets.SSH_KEY }}
+          SSH_HOST: ${{ secrets.SERVER_HOST }}
+          SSH_USER: ${{ secrets.SERVER_USERNAME }}
 
       # Step 5: SSH into the server and deploy
       - name: Deploy on Server
