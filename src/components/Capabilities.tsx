@@ -66,7 +66,7 @@ const Capabilities: React.FC = () => {
 
     return (
         <section id="pictures" style={{ padding: '2rem', backgroundColor: '#f7f9fc' }}>
-            <Title level={2} style={{ textAlign: 'center', marginBottom: '2rem' }}>Pictures</Title>
+            <Title level={2} style={{ textAlign: 'center', marginBottom: '2rem' }}>Capabilities</Title>
             <Row gutter={[16, 16]} justify="center">
                 {capabilities.map((picture, index) => (
                     <Col key={index} xs={24} sm={12} md={8}>
