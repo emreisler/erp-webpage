@@ -20,7 +20,7 @@ const Contact: React.FC = () => {
                 {/* Contact Information */}
                 <div>
                     <MailOutlined style={{ fontSize: '1.5rem', marginRight: '0.5rem', color: '#1890ff' }} />
-                    <Text style={{ fontSize: '1.2rem', color: '#ffffff' }}>contact@mrplite.com</Text>
+                    <Text style={{ fontSize: '1.2rem', color: '#ffffff' }}>contact@mrplite.cloud</Text>
                 </div>
 
                 <Divider style={{ borderColor: '#10bbbb' }} />

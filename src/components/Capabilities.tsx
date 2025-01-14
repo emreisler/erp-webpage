@@ -4,7 +4,6 @@ import { Card, Row, Col, Typography, Modal } from 'antd';
 import partList from "../assets/erp-photos/erp-part-list.png"
 import stockList from "../assets/erp-photos/stock-list.png"
 import tcCreation from "../assets/erp-photos/tc-creation.png"
-import operationList from "../assets/erp-photos/operation-list.png"
 import operatorScreen from "../assets/erp-photos/operator-screen.png"
 import createPo from "../assets/erp-photos/create-production-order.png"
 import dashBoard1 from "../assets/erp-photos/dahsboard-1.png"
@@ -76,12 +75,12 @@ const Capabilities: React.FC = () => {
                                 <img
                                     alt={picture.title}
                                     src={picture.imageUrl}
-                                    style={{ borderRadius: '10px', cursor: 'pointer' }}
+                                    className="card-image"
                                     onClick={() => handleImageClick(picture.imageUrl)}
                                 />
                             }
                             style={{
-                                borderRadius: '10px',
+                                borderRadius: '2px',
                                 boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
                             }}
                         >
@@ -104,7 +103,7 @@ const Capabilities: React.FC = () => {
                 <img
                     src={currentImage || ''}
                     alt="Expanded View"
-                    style={{ width: '100%', borderRadius: '10px' }}
+                    style={{ width: '100%', borderRadius: '2px' }}
                 />
             </Modal>
         </section>
