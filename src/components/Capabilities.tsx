@@ -6,7 +6,7 @@ import stockList from "../assets/erp-photos/stock-list.png"
 import tcCreation from "../assets/erp-photos/tc-creation.png"
 import operatorScreen from "../assets/erp-photos/operator-screen.png"
 import createPo from "../assets/erp-photos/create-production-order.png"
-import dashBoard1 from "../assets/erp-photos/dahsboard-1.png"
+import dashBoard1 from "../assets/erp-photos/dashboard-1.png"
 
 const { Title, Paragraph } = Typography;
 
